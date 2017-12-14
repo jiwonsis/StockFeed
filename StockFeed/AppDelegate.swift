@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let groupsViewController = GroupsViewController()
+        let dataService = GroupsDataService(dataManager: GroupsManager())
+        let groupsViewController = GroupsViewController(dataService: dataService)
         let navigationController = UINavigationController(rootViewController: groupsViewController)
         
         window = UIWindow(frame: UIScreen.main.bounds)

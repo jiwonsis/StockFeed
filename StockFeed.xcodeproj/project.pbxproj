@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343D6AF51FE2C5190028F079 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D6AF41FE2C5190028F079 /* AppDelegateTests.swift */; };
 		344C3F9A1FE0E94F0069EB60 /* ModelCoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3F991FE0E94F0069EB60 /* ModelCoable.swift */; };
 		344C3FA01FE0F4280069EB60 /* GroupsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3F9F1FE0F4280069EB60 /* GroupsViewControllerTests.swift */; };
 		344C3FA31FE0F5A60069EB60 /* GroupsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3FA21FE0F5A60069EB60 /* GroupsDataService.swift */; };
+		344C3FAB1FE104FC0069EB60 /* GroupsDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3FAA1FE104FC0069EB60 /* GroupsDataServiceTests.swift */; };
+		344C3FAE1FE10A500069EB60 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3FAC1FE10A500069EB60 /* GroupCell.swift */; };
+		344C3FAF1FE10A500069EB60 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344C3FAD1FE10A500069EB60 /* GroupCell.xib */; };
+		344C3FB21FE10AA60069EB60 /* NSObject+StockFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3FB11FE10AA60069EB60 /* NSObject+StockFeed.swift */; };
+		344C3FB51FE10D460069EB60 /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3FB41FE10D460069EB60 /* MockExtensions.swift */; };
 		34EE46871FE0B04000561F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EE46861FE0B04000561F8E /* AppDelegate.swift */; };
 		34EE468E1FE0B04000561F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EE468D1FE0B04000561F8E /* Assets.xcassets */; };
 		34EE46911FE0B04000561F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EE468F1FE0B04000561F8E /* LaunchScreen.storyboard */; };
@@ -33,9 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		343D6AF41FE2C5190028F079 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		344C3F991FE0E94F0069EB60 /* ModelCoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCoable.swift; sourceTree = "<group>"; };
 		344C3F9F1FE0F4280069EB60 /* GroupsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewControllerTests.swift; sourceTree = "<group>"; };
 		344C3FA21FE0F5A60069EB60 /* GroupsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDataService.swift; sourceTree = "<group>"; };
+		344C3FAA1FE104FC0069EB60 /* GroupsDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDataServiceTests.swift; sourceTree = "<group>"; };
+		344C3FAC1FE10A500069EB60 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		344C3FAD1FE10A500069EB60 /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		344C3FB11FE10AA60069EB60 /* NSObject+StockFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+StockFeed.swift"; sourceTree = "<group>"; };
+		344C3FB41FE10D460069EB60 /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
 		34EE46831FE0B04000561F8E /* StockFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EE46861FE0B04000561F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34EE468D1FE0B04000561F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +98,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		344C3FA91FE104E00069EB60 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				344C3FAA1FE104FC0069EB60 /* GroupsDataServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		344C3FB01FE10A910069EB60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				344C3FB11FE10AA60069EB60 /* NSObject+StockFeed.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		344C3FB31FE10D240069EB60 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				344C3FB41FE10D460069EB60 /* MockExtensions.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		34EE467A1FE0B04000561F8E = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +144,7 @@
 		34EE46851FE0B04000561F8E /* StockFeed */ = {
 			isa = PBXGroup;
 			children = (
+				344C3FB01FE10A910069EB60 /* Extensions */,
 				344C3F981FE0E8450069EB60 /* Strategies */,
 				34EE46B31FE0B11C00561F8E /* Group */,
 				34EE46AB1FE0B0C000561F8E /* Groups */,
@@ -125,6 +162,7 @@
 				34EE46B71FE0B1BB00561F8E /* Group */,
 				34EE46B01FE0B0E100561F8E /* Groups */,
 				34EE469D1FE0B04100561F8E /* Info.plist */,
+				343D6AF41FE2C5190028F079 /* AppDelegateTests.swift */,
 			);
 			path = StockFeedTests;
 			sourceTree = "<group>";
@@ -142,6 +180,8 @@
 		34EE46B01FE0B0E100561F8E /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				344C3FB31FE10D240069EB60 /* Mocks */,
+				344C3FA91FE104E00069EB60 /* Services */,
 				344C3F9E1FE0F4160069EB60 /* Views */,
 			);
 			path = Groups;
@@ -152,6 +192,8 @@
 			children = (
 				34EE46AD1FE0B0D000561F8E /* GroupsViewController.xib */,
 				34EE46AC1FE0B0D000561F8E /* GroupsViewController.swift */,
+				344C3FAC1FE10A500069EB60 /* GroupCell.swift */,
+				344C3FAD1FE10A500069EB60 /* GroupCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +342,7 @@
 				34EE46911FE0B04000561F8E /* LaunchScreen.storyboard in Resources */,
 				34EE46AF1FE0B0D000561F8E /* GroupsViewController.xib in Resources */,
 				34EE46C31FE0C62400561F8E /* README.md in Resources */,
+				344C3FAF1FE10A500069EB60 /* GroupCell.xib in Resources */,
 				34EE468E1FE0B04000561F8E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,11 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344C3FAE1FE10A500069EB60 /* GroupCell.swift in Sources */,
 				344C3FA31FE0F5A60069EB60 /* GroupsDataService.swift in Sources */,
 				344C3F9A1FE0E94F0069EB60 /* ModelCoable.swift in Sources */,
 				34EE46BC1FE0B85500561F8E /* GroupsManager.swift in Sources */,
 				34EE46871FE0B04000561F8E /* AppDelegate.swift in Sources */,
 				34EE46AE1FE0B0D000561F8E /* GroupsViewController.swift in Sources */,
+				344C3FB21FE10AA60069EB60 /* NSObject+StockFeed.swift in Sources */,
 				34EE46B61FE0B12D00561F8E /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +377,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EE46B91FE0B1E900561F8E /* GroupStructTests.swift in Sources */,
+				344C3FAB1FE104FC0069EB60 /* GroupsDataServiceTests.swift in Sources */,
 				344C3FA01FE0F4280069EB60 /* GroupsViewControllerTests.swift in Sources */,
+				344C3FB51FE10D460069EB60 /* MockExtensions.swift in Sources */,
+				343D6AF51FE2C5190028F079 /* AppDelegateTests.swift in Sources */,
 				34EE46C01FE0B89700561F8E /* GroupsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

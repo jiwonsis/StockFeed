@@ -31,7 +31,7 @@ class GroupsManager {
         groups.removeAll()
     }
     
-    func groupsAt(index: Int) -> Group {
+    func groupsAt(index: Int) -> Group? {
         return groups[index]
     }
     

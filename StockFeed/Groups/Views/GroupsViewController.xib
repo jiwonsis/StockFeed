@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupsViewController" customModule="StockFeed" customModuleProvider="target">
             <connections>
-                <outlet property="dataService" destination="P1R-gV-tk4" id="Pl8-uS-eNs"/>
                 <outlet property="groupTableView" destination="Je4-Mz-dds" id="xb5-Xd-bBL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,6 +36,5 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
-        <customObject id="P1R-gV-tk4" customClass="GroupsDataService" customModule="StockFeed" customModuleProvider="target"/>
     </objects>
 </document>
