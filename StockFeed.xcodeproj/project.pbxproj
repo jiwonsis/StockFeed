@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		343D6AF51FE2C5190028F079 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D6AF41FE2C5190028F079 /* AppDelegateTests.swift */; };
+		343D6AFA1FE2D3260028F079 /* EditGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D6AF81FE2D3260028F079 /* EditGroupViewController.swift */; };
+		343D6AFB1FE2D3260028F079 /* EditGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 343D6AF91FE2D3260028F079 /* EditGroupViewController.xib */; };
 		344C3F9A1FE0E94F0069EB60 /* ModelCoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3F991FE0E94F0069EB60 /* ModelCoable.swift */; };
 		344C3FA01FE0F4280069EB60 /* GroupsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3F9F1FE0F4280069EB60 /* GroupsViewControllerTests.swift */; };
 		344C3FA31FE0F5A60069EB60 /* GroupsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C3FA21FE0F5A60069EB60 /* GroupsDataService.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		343D6AF41FE2C5190028F079 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		343D6AF81FE2D3260028F079 /* EditGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroupViewController.swift; sourceTree = "<group>"; };
+		343D6AF91FE2D3260028F079 /* EditGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditGroupViewController.xib; sourceTree = "<group>"; };
 		344C3F991FE0E94F0069EB60 /* ModelCoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCoable.swift; sourceTree = "<group>"; };
 		344C3F9F1FE0F4280069EB60 /* GroupsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewControllerTests.swift; sourceTree = "<group>"; };
 		344C3FA21FE0F5A60069EB60 /* GroupsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDataService.swift; sourceTree = "<group>"; };
@@ -82,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343D6AF61FE2D3030028F079 /* EditGroup */ = {
+			isa = PBXGroup;
+			children = (
+				343D6AF71FE2D3130028F079 /* View */,
+			);
+			path = EditGroup;
+			sourceTree = "<group>";
+		};
+		343D6AF71FE2D3130028F079 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				343D6AF81FE2D3260028F079 /* EditGroupViewController.swift */,
+				343D6AF91FE2D3260028F079 /* EditGroupViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		344C3F981FE0E8450069EB60 /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +165,7 @@
 		34EE46851FE0B04000561F8E /* StockFeed */ = {
 			isa = PBXGroup;
 			children = (
+				343D6AF61FE2D3030028F079 /* EditGroup */,
 				344C3FB01FE10A910069EB60 /* Extensions */,
 				344C3F981FE0E8450069EB60 /* Strategies */,
 				34EE46B31FE0B11C00561F8E /* Group */,
@@ -170,8 +192,7 @@
 		34EE46AB1FE0B0C000561F8E /* Groups */ = {
 			isa = PBXGroup;
 			children = (
-				34EE46C11FE0BC5900561F8E /* Manager */,
-				34EE46BA1FE0B83000561F8E /* Services */,
+				34EE46BA1FE0B83000561F8E /* ViewModel */,
 				34EE46B11FE0B0E900561F8E /* Views */,
 			);
 			path = Groups;
@@ -190,6 +211,7 @@
 		34EE46B11FE0B0E900561F8E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				344C3FA21FE0F5A60069EB60 /* GroupsDataService.swift */,
 				34EE46AD1FE0B0D000561F8E /* GroupsViewController.xib */,
 				34EE46AC1FE0B0D000561F8E /* GroupsViewController.swift */,
 				344C3FAC1FE10A500069EB60 /* GroupCell.swift */,
@@ -223,12 +245,12 @@
 			path = Group;
 			sourceTree = "<group>";
 		};
-		34EE46BA1FE0B83000561F8E /* Services */ = {
+		34EE46BA1FE0B83000561F8E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				344C3FA21FE0F5A60069EB60 /* GroupsDataService.swift */,
+				34EE46BB1FE0B85500561F8E /* GroupsManager.swift */,
 			);
-			path = Services;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		34EE46BD1FE0B88300561F8E /* Model */ = {
@@ -245,14 +267,6 @@
 				34EE46BF1FE0B89700561F8E /* GroupsManagerTests.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		34EE46C11FE0BC5900561F8E /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				34EE46BB1FE0B85500561F8E /* GroupsManager.swift */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +357,7 @@
 				34EE46AF1FE0B0D000561F8E /* GroupsViewController.xib in Resources */,
 				34EE46C31FE0C62400561F8E /* README.md in Resources */,
 				344C3FAF1FE10A500069EB60 /* GroupCell.xib in Resources */,
+				343D6AFB1FE2D3260028F079 /* EditGroupViewController.xib in Resources */,
 				34EE468E1FE0B04000561F8E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +380,7 @@
 				344C3FA31FE0F5A60069EB60 /* GroupsDataService.swift in Sources */,
 				344C3F9A1FE0E94F0069EB60 /* ModelCoable.swift in Sources */,
 				34EE46BC1FE0B85500561F8E /* GroupsManager.swift in Sources */,
+				343D6AFA1FE2D3260028F079 /* EditGroupViewController.swift in Sources */,
 				34EE46871FE0B04000561F8E /* AppDelegate.swift in Sources */,
 				34EE46AE1FE0B0D000561F8E /* GroupsViewController.swift in Sources */,
 				344C3FB21FE10AA60069EB60 /* NSObject+StockFeed.swift in Sources */,

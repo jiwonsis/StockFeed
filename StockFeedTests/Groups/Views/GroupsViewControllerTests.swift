@@ -7,7 +7,9 @@ class GroupsViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = GroupsViewController(dataService: GroupsDataService(dataManager: GroupsManager()))
+        let viewModel = GroupsManager()
+        let dataServie = GroupsDataService(viewModel: viewModel)
+        sut = GroupsViewController(dataService: dataServie, viewModel: viewModel)
     }
     
     // ViewDidLoad시, 테이블 뷰가 nil아이여야 한다.
@@ -39,10 +41,12 @@ class GroupsViewControllerTests: XCTestCase {
     
     // 테이블뷰에서 선택한 셀은 OpenEditView 메소드를 호출해야한다.
     func test_CallOpenEditView_ShouldReturnTrue() {
-        let groupsViewControllerMock = GroupsViewControllerMock(dataService: GroupsDataService(dataManager: GroupsManager()))
+        let viewModel = GroupsManager()
+        let dataServie = GroupsDataService(viewModel: viewModel)
+        let groupsViewControllerMock = GroupsViewControllerMock(dataService: dataServie, viewModel: viewModel)
         let tableView = UITableView()
         groupsViewControllerMock.groupTableView = tableView
-        groupsViewControllerMock.dataManager.addGroup(group: Group(title: "더미타이틀", note: "더미 노트"))
+        groupsViewControllerMock.viewModel.addGroup(group: Group(title: "더미타이틀", note: "더미 노트"))
         _ = groupsViewControllerMock.view
         
         tableView.delegate?.tableView!(tableView, didSelectRowAt: IndexPath(row: 0, section: 0))

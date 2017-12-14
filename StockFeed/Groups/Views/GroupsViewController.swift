@@ -4,11 +4,11 @@ class GroupsViewController: UIViewController {
 
     @IBOutlet weak var groupTableView: UITableView!
     var dataService: GroupsDataService!
-    var dataManager: GroupsManager!
+    var viewModel: GroupsManager!
     
-    init(dataService: GroupsDataService) {
+    init(dataService: GroupsDataService, viewModel: GroupsManager) {
         self.dataService = dataService
-        self.dataManager = dataService.dataManager
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -21,7 +21,6 @@ class GroupsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataService.dataManager = dataManager
         dataService.didSelected = { group in
             self.openEditView(group: group)
         }
